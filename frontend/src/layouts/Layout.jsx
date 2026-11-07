@@ -132,7 +132,7 @@ export default function Layout() {
       <nav className="flex-1 overflow-hidden px-3 py-2 scrollbar-thin">
         {visibleGroups.map((group, groupIndex) => (
           <div key={group.label} className={groupIndex ? "mt-2.5" : ""}>
-            <div className="mb-1 px-3 text-[9px] font-semibold uppercase tracking-[0.2em] text-gray-600">
+            <div className="mb-1 px-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-500">
               {group.label}
             </div>
             <div className="space-y-0.5">
@@ -143,7 +143,7 @@ export default function Layout() {
                   end={item.to === "/"}
                   onClick={() => setMenuOpen(false)}
                   className={({ isActive }) =>
-                    `group relative flex h-[30px] items-center gap-3 rounded-md px-3 text-[12px] transition-colors ${
+                    `group relative flex h-8 items-center gap-3 rounded-md px-3 text-[13px] transition-colors ${
                       isActive
                         ? "bg-white/[0.07] font-medium text-white"
                         : "text-gray-400 hover:bg-white/[0.04] hover:text-gray-100"
@@ -156,7 +156,7 @@ export default function Layout() {
                         <span className="absolute right-0 h-5 w-0.5 rounded-l bg-lime-300" />
                       )}
                       <span
-                        className={`flex w-4 items-center justify-center text-sm ${isActive ? "text-lime-300" : "text-gray-500 group-hover:text-gray-300"}`}
+                        className={`flex w-5 items-center justify-center text-base ${isActive ? "text-lime-300" : "text-gray-500 group-hover:text-gray-300"}`}
                       >
                         {item.icon}
                       </span>
